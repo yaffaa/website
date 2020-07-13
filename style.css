@@ -1,0 +1,200 @@
+* {
+  margin: 0;
+  padding: 0;
+
+}
+canvas {
+  display: block;
+  z-index: -1;
+}
+
+
+.MOVE{
+
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 100%;
+    text-align: center;
+
+}
+
+.centerr{
+	    position: absolute;
+    top: 50%;
+    left: 50%;
+	
+}
+.center{
+		font-size:10vw;
+		font-family: 'IBM Plex Sans', sans-serif;
+
+
+}
+.elements{
+	font-size:5vw;
+font-family: 'IBM Plex Sans', sans-serif;
+
+}
+
+nav{
+	position:absolute;
+	top:0px;
+	width:100%;
+	height:5vw;
+	
+	background-color:#D1D1D1;
+
+}
+ul{
+
+	margin-left:5vw;
+}
+
+ul li {
+  list-style:none;
+  display: inline-block;
+  line-height:5vw;
+  	float:left;
+}
+
+ul li a {
+	
+	display:block;
+	text-decoration: none;
+	font-family: arial;
+	font-size:2vw;
+	color:#fff;
+	padding:0 20px;
+	font-family: 'IBM Plex Sans', sans-serif;
+
+	
+}
+
+ul li a:hover{
+	color:#9C9C9C;
+}
+#logo{
+	position: absolute;
+	top: 0vw;
+	left:85%;
+	float:right;
+	height:5vw;
+}
+html { overflow-y: hidden; }
+.myProgress {
+	 position: absolute;
+ left:40%;
+
+top:35vw;
+   transform: translate(3%, -50%);
+  width: 55%;
+  background-color: #ddd;
+   border-radius: 25px;
+}
+
+.myBar {
+
+  background-color: #4CAF50;
+  text-align: center;
+  line-height: 30px;
+   border-radius: 25px;
+  color: white;
+}
+
+.circle{
+position: absolute;
+top:50%;
+
+    background-image:url("Profile.jpg");
+	  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: 50% 50%;
+  background-size:100%;
+   transform: translate(1%, -44%);
+    width:40%;
+
+    border-radius:50%;
+    border:2px solid #000;
+    box-shadow:0 0 10px #000;
+	
+  }
+  
+   .circle:after{
+    content:"";
+    padding-bottom:100%;
+    display:block;
+  }
+
+  
+  #aboutme{
+	  width:60%;
+	  height:90%;
+	  font-size:2.9vw;
+	  
+	  position:absolute;
+	  top:40%;
+	  right:121%;
+	   transform: translate(200%, -30%);
+	  		font-family: 'IBM Plex Sans', sans-serif;
+  }
+ #multitask{
+	position:absolute;
+	top:91%;
+	left:34%;
+ }
+ #drawskill{
+	position:absolute;
+	top:79%;
+left:38%;	 
+ }
+ #creative{
+	position:absolute;
+	top:67%;
+	
+ }
+  @media only screen and (max-width: 600px){
+	
+	.circle{
+		  position:relative;
+		top:-40px;
+		left:50%;
+	transform: translate(-50%, 50%);
+	}
+	#aboutme{
+		position:relative;
+
+	 
+	   transform: translate(-50%, -30%);
+	   left:50%;
+	   font-size:1em;
+	   top:110px;
+	}
+	.myProgress{
+		width:90%;
+		left:10px;
+	}
+	#multitask{
+		position:relative;
+
+left:3%  !important;
+		top:150px  !important;
+	}
+	#creative{
+		position:relative;
+left:3%  !important;
+		top:160px !important;
+		
+	}
+	#drawskill{
+		position:relative;
+
+		left:3% !important;
+		top:80PX !important;
+		
+	}
+	html { overflow-y: unset; }
+}

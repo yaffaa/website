@@ -1,0 +1,109 @@
+*{
+	margin:0;
+	padding:0;
+	overflow:hidden;
+	font-family: 'IBM Plex Sans', sans-serif;
+	
+}
+nav{
+	position:absolute;
+	top:0px;
+	width:100%;
+	height:5vw;
+
+	background-color:#D1D1D1;
+
+}
+ul{
+
+	margin-left:5vw;
+}
+
+ul li {
+  list-style:none;
+  display: inline-block;
+  line-height:5vw;
+  	float:left;
+}
+
+ul li a {
+	
+	display:block;
+	text-decoration: none;
+	font-family: arial;
+	font-size:2vw;
+	color:#fff;
+	padding:0 20px;
+	font-family: 'IBM Plex Sans', sans-serif;
+
+	
+}
+#logo{
+	position: absolute;
+	top: 0vw;
+	left:85%;
+	float:right;
+	height:5vw;
+}
+.contact-form{
+
+	width:85%;
+
+	max-width:600px;
+
+	background-color: #f1f1f1;
+
+	position: absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+padding: 30px 40px;
+	box-sizing: border-box;
+		border-radius:8px;
+		text-align:center;
+    box-shadow:0 0 20px #000000b3;
+
+	
+}
+ul li a:hover{
+	color:#9C9C9C;
+}
+.contact-form h1{
+	margin-top: 0;
+	font-weight:200;
+}
+.txtb{
+	border:1px solid gray;
+		height:20%;
+	margin: 8px 0;
+	padding: 12px 18px;
+	border-radius: 8px;
+
+}
+p{
+	display:block;
+	text-align: left;
+	color: #333;
+	text-transform: uppercase;
+	font-size:14px;
+}
+
+.txtb input,.txtb textarea{
+	width:100%;
+
+	border:none;
+	background:none;
+	font-size:10px;
+	margin-top:6px;
+}
+.submit{
+	display: block;
+	background:#9b59b6;
+	padding:14px 0;
+	color:white;
+	text-transform: uppercase;
+	cursor:pointer;
+	margin-top: 6px;
+
+	width: 100%;
+}
