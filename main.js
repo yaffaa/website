@@ -10,21 +10,24 @@ $(document).ready(function(){
 		var message = $(".message").val()
 		var statusel = $(".status")
 		if(email.length >= 5 && email.includes('@') && email.includes('.')){
-			statusel.append('<div>Email Is valid</div')
+			statusel.text('Email Is valid\n')
 		}else{
-			statusel.append('<div>Email Is not valid</div')
+			statusel.text('Email Is not valid\n')
+			event.preventDefault();
 		}
 		
 		if(subject.length >= 2){
-			statusel.append('<div>Subjet Is valid</div')
+			statusel.append('<br>Subjet Is valid')
 		}else{
-			statusel.append('<div>Subject Is not valid</div')
+			statusel.append('<br>Subject Is not valid')
+			event.preventDefault();
 		}
 		
 		if(message.length >= 5){
-			statusel.append('<div>Message Is not valid</div')
+			statusel.append('<div>Message Is valid</div')
 		}else{
 			statusel.append('<div>Message Is not valid</div')
+event.preventDefault();
 		}
 	})
 	
